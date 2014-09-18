@@ -1,5 +1,11 @@
 'use strict';
 
+var gitRepoInfo = require('git-repo-info');
+
 module.exports = function(/* environment, appConfig */) {
-  return { };
+  var currentInfo = gitRepoInfo();
+
+  return {
+    currentRevision: currentInfo.abbreviatedSha,
+  };
 };
