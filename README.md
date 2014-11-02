@@ -28,7 +28,7 @@ import config from '../config/environment';
 
 *Note: The config import statement is a relative path.*
 
-Now you can make sure any issues are tracked against the correct git revision!
+**Now you can make sure any issues are tracked against the correct git revision!**
 
 ## Installation
 
