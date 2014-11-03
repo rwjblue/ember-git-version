@@ -4,6 +4,6 @@ export default {
   name: 'print-git-info',
 
   initialize: function() {
-    console.log(config.currentRevision);
+    console.log(config.gitInfo.branch + ': ' + config.gitInfo.abbreviatedSha);
   }
 }
