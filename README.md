@@ -4,7 +4,7 @@ This addon adds a property to your config with current **git** info.
 
 `config.gitInfo` will return the following object:
 
-```json
+```js
 gitInfo: {
 	sha: 'e7dfce8339e7dfce8339',
     abbreviatedSha: 'e7dfce8339',
@@ -22,7 +22,7 @@ npm install ember-git-version --save
 
 Once installed you now have access to current **git** info through a new config property `config.gitInfo` which is an object with the following values:
 
-```json
+```js
 gitInfo: {
 	sha: 'e7dfce8339e7dfce8339',
     abbreviatedSha: 'e7dfce8339',
