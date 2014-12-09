@@ -4,6 +4,8 @@ export default {
   name: 'print-git-info',
 
   initialize: function() {
-    console.log(config.currentRevision);
+    if(config.environment !== 'test') {
+      console.log(config.currentRevision);
+    }
   }
 }
