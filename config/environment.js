@@ -7,5 +7,8 @@ module.exports = function(/* environment, appConfig */) {
 
   return {
     currentRevision: currentInfo.abbreviatedSha,
+    longRevision: currentInfo.sha,
+    tag: currentInfo.tag,
+    branch: currentInfo.branch
   };
 };
