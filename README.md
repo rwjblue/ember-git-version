@@ -21,7 +21,15 @@ To access the new property, import the config whenever needed.
 import config from '../config/environment';
 
 ...
-	console.log(config.currentRevision);
+  console.log(config.currentRevision); //=> will be the first 10 chars of the current sha
+  console.log(config.longRevision);    //=> will be the current sha
+  console.log(config.tag);             //=> will be the tag for the current sha (or `null` if no tag exists)
+  console.log(config.branch);          //=> will be the current branch
+  console.log(config.committer);       //=> will be the committer for the current sha
+  console.log(config.committerDate);   //=> will be the commit date for the current sha
+  console.log(config.author);          //=> will be the author for the current sha
+  console.log(config.authorDate);      //=> will be the authored date for the current sha
+  console.log(config.commitMessage);   //=> will be the commit message for the current sha
 ...
 
 ```
