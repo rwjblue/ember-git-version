@@ -35,6 +35,6 @@
     "configPath": "tests/dummy/config"
   },
   "dependencies": {
-    "git-repo-info": "^1.0.2"
+    "git-repo-info": "^1.4.1"
   }
 }

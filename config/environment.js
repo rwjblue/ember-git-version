@@ -5,10 +5,8 @@ var gitRepoInfo = require('git-repo-info');
 module.exports = function(/* environment, appConfig */) {
   var currentInfo = gitRepoInfo();
 
-  return {
+  return Object.assign({}, currentInfo, {
     currentRevision: currentInfo.abbreviatedSha,
     longRevision: currentInfo.sha,
-    tag: currentInfo.tag,
-    branch: currentInfo.branch
-  };
+  });
 };
